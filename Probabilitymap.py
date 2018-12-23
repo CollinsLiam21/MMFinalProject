@@ -8,9 +8,9 @@ green = Color(0x00FF00,1)
 blue = Color(0x0000FF,1)
 black = Color(0x000000,1)
 
-blackOutline = LineStyle(1,black)
+blackOutline = LineStyle(2,black)
 
-field = RectangleAsset(300,400,blackOutline,red) #width, height, outline, fill
+field = RectangleAsset(600,400,blackOutline,green) #width, height, outline, fill
 #blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 #greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 #blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
