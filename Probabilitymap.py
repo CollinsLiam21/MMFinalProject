@@ -12,9 +12,10 @@ orange = Color(0xFFA500,1)
 blackOutline = LineStyle(2,black)
 noOutline = LineStyle(0,black)
 
-field = RectangleAsset(700,450,blackOutline,green) #width, height, outline, fill
-box = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fill
+field = RectangleAsset(700,500,blackOutline,green) #width, height, outline, fill
+YardBox = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fill
 location_13 = RectangleAsset(225,75,noOutline,orange)
+#HalfCircleBox = CircleAsset(50,blackOutline,green)
 #blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 #greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 #blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
@@ -22,8 +23,9 @@ location_13 = RectangleAsset(225,75,noOutline,orange)
 #text = TextAsset('Literature',fill=green, style='bold 40pt Times') #text, other options
 
 Sprite(field)
-Sprite(box, (150,250))
-Sprite(location_13, (237.5,375))
+Sprite(YardBox, (150,300))
+Sprite(location_13, (237.5,425))
+#Sprite(HalfCircleBox, (50,50))
 #Sprite(blueCircle,(50,50))
 #Sprite(greenEllipse,(200,50))
 #Sprite(blackLine)
