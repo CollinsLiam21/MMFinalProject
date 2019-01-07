@@ -6,8 +6,8 @@ from ggame import *
 def mouseClick(event): 
     A = event.x
     B = event.y
-    if event.x 
-    Sprite(SoccerBall, (A-10,B-10))
+    if event.x < 150 and 425 < event.y < 500:
+        Sprite(SoccerBall, (A-10,B-10))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
