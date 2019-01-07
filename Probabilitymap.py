@@ -6,7 +6,8 @@ from ggame import *
 def mouseClick(event): 
     A = event.x
     B = event.y
-    Sprite(HalfCircleBox, (A,B))
+    if event.x 
+    Sprite(SoccerBall, (A-10,B-10))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
@@ -19,8 +20,8 @@ noOutline = LineStyle(0,black)
 
 field = RectangleAsset(700,500,blackOutline,green) #width, height, outline, fill
 YardBox = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fill
-location_13 = RectangleAsset(225,75,noOutline,orange)
-HalfCircleBox = CircleAsset(50,blackOutline,green)
+location_13 = RectangleAsset(225,75,blackOutline,green)
+SoccerBall = CircleAsset(10,blackOutline,black)
 #blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 #greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 #blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
@@ -30,7 +31,6 @@ HalfCircleBox = CircleAsset(50,blackOutline,green)
 Sprite(field)
 Sprite(YardBox, (150,300))
 Sprite(location_13, (237.5,425))
-
 #Sprite(HalfCircleBox, (50,50))
 #Sprite(blueCircle,(50,50))
 #Sprite(greenEllipse,(200,50))
