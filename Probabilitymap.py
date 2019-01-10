@@ -71,6 +71,11 @@ def mouseClick(event):
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '2%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
+    #Location 17
+    if event.x < 700 and 75 < event.y < 150:
+        Sprite(SoccerBall, (A-10,B-10))
+        data['goalProb'] = '2%'
+        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
