@@ -6,7 +6,13 @@ from ggame import *
 def mouseClick(event): 
     A = event.x
     B = event.y
+    #Location 5
     if event.x < 150 and 300 < event.y < 500:
+        Sprite(SoccerBall, (A-10,B-10))
+        data['goalProb'] = '0%'
+        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
+    #Location 4
+    if 550 < event.x < 700 and 300 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '0%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
