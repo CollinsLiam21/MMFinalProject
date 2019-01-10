@@ -9,7 +9,7 @@ def mouseClick(event):
     if event.x < 150 and 300 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '0%'
-        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (750,400))
+        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
@@ -41,6 +41,7 @@ Sprite(location_13, (237.5,425))
 Sprite(goalProb, (705,400))
 
 #Dictionary
+data = {}
 data['goalProb'] = 0
 
 App().listenMouseEvent('click',mouseClick)
