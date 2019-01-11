@@ -145,6 +145,8 @@ ChooseLocation = TextAsset('Choose_Location',fill=black, style='bold 15pt Times'
 location_13 = RectangleAsset(225,75,blackOutline,green)
 SoccerBall = CircleAsset(10,blackOutline,black)
 goalProb = TextAsset('Goal_Probability',fill=black, style='bold 15pt Times') #text, other options
+goalProbWithShotPlace = TextAsset('With_Shot_Place',fill=black, style='bold 15pt Times')
+goalProbWithBodypart = TextAsset('With_Body_Part',fill=black, style='bold 15pt Times')
 
 goal = RectangleAsset(300,200,blackOutline,orange)
 ChooseShotPlace = TextAsset('Choose_Shot_Place',fill=black, style='bold 15pt Times') #text, other options
@@ -165,6 +167,7 @@ Sprite(ChooseLocation, (5,5))
 #Sprite(blackLine)
 #Sprite(redTriangle, (175,200))
 Sprite(goalProb, (705,400))
+Sprite(goalProbWithShotPlace, (705,425))
 
 #Dictionary
 data = {}
