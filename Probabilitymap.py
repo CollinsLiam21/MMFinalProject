@@ -102,7 +102,7 @@ YardBox = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fi
 ChooseLocation = TextAsset('Choose_Location',fill=black, style='bold 15pt Times') #text, other options
 location_13 = RectangleAsset(225,75,blackOutline,green)
 SoccerBall = CircleAsset(10,blackOutline,black)
-goalProb = TextAsset('Goal Probability',fill=black, style='bold 20pt Times') #text, other options
+goalProb = TextAsset('Goal_Probability',fill=black, style='bold 15pt Times') #text, other options
 
 goal = RectangleAsset(300,200,blackOutline,orange)
 ChooseShotPlace = TextAsset('Choose_Shot_Place',fill=black, style='bold 15pt Times') #text, other options
