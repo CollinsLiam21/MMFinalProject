@@ -3,7 +3,7 @@
 
 from ggame import *
 
-shotPlaceProbList = [[
+shotPlaceProbList = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 def mouseClick(event): 
     A = event.x
