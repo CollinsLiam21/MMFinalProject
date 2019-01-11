@@ -12,77 +12,82 @@ def mouseClick(event):
         data['goalProb'] = '0%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 4
-    if 550 < event.x < 700 and 300 < event.y < 500:
+    elif 550 < event.x < 700 and 300 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '0%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 11
-    if 150 < event.x < 237.5 and 300 < event.y < 425:
+    elif 150 < event.x < 237.5 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '7%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 9
-    if 462.5 < event.x < 550 and 300 < event.y < 425:
+    elif 462.5 < event.x < 550 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '6%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 3
-    if 237.5 < event.x < 462.5 and 300 < event.y < 425:
+    elif 237.5 < event.x < 462.5 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '15%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 12
-    if 150 < event.x < 237.5 and 425 < event.y < 500:
+    elif 150 < event.x < 237.5 and 425 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '20%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 10
-    if 462.5 < event.x < 550 and 425 < event.y < 500:
+    elif 462.5 < event.x < 550 and 425 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '20%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 7
-    if event.x < 250 and 225 < event.y < 300:
+    elif event.x < 250 and 225 < event.y < 300:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '8%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 8
-    if 450 < event.x < 700 and 225 < event.y < 300:
+    elif 450 < event.x < 700 and 225 < event.y < 300:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '8%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 15
-    if 250 < event.x < 450 and 225 < event.y < 300:
+    elif 250 < event.x < 450 and 225 < event.y < 300:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '3%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 6left
-    if event.x < 250 and 150 < event.y < 225:
+    elif event.x < 250 and 150 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '3%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 6right 
-    if 450 < event.x < 700 and 150 < event.y < 225:
+    elif 450 < event.x < 700 and 150 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '3%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 16
-    if 250 < event.x < 450 and 150 < event.y < 225:
+    elif 250 < event.x < 450 and 150 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '2%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 17
-    if event.x < 700 and 75 < event.y < 150:
+    elif event.x < 700 and 75 < event.y < 150:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '1%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 18
-    if event.x < 700 and event.y < 75:
+    elif event.x < 700 and event.y < 75:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '2%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
     #Location 13
-    if 237.5 < event.x < 462.5 and 425 < event.y < 500:
+    elif 237.5 < event.x < 462.5 and 425 < event.y < 500:
+        Sprite(SoccerBall, (A-10,B-10))
+        data['goalProb'] = '50%'
+        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
+    #shot place 12
+    elif 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '50%'
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 20pt Times'), (900,400))
