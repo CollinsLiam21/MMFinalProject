@@ -168,7 +168,7 @@ Sprite(ChooseLocation, (5,5))
 #Sprite(redTriangle, (175,200))
 Sprite(goalProb, (705,400))
 Sprite(goalProbWithShotPlace, (705,425))
-Sprite(goalProbWithShotPlace, (705,450))
+Sprite(goalProbWithBodypart, (705,450))
 
 #Dictionary
 data = {}
