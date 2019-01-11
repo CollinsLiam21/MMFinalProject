@@ -92,6 +92,7 @@ green = Color(0x00FF00,1)
 blue = Color(0x0000FF,1)
 black = Color(0x000000,1)
 orange = Color(0xFFA500,1)
+white = Color(0xFFFFFF,1)
 
 blackOutline = LineStyle(2,black)
 noOutline = LineStyle(0,black)
@@ -101,6 +102,8 @@ YardBox = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fi
 location_13 = RectangleAsset(225,75,blackOutline,green)
 SoccerBall = CircleAsset(10,blackOutline,black)
 goalProb = TextAsset('Goal Probability',fill=black, style='bold 20pt Times') #text, other options
+
+goal = RectangleAsset(300,200,blackOutline,orange)
 #blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 #greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 #blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
@@ -109,6 +112,7 @@ goalProb = TextAsset('Goal Probability',fill=black, style='bold 20pt Times') #te
 Sprite(field)
 Sprite(YardBox, (150,300))
 Sprite(location_13, (237.5,425))
+Sprite(goal, (710,0))
 #Sprite(HalfCircleBox, (50,50))
 #Sprite(blueCircle,(50,50))
 #Sprite(greenEllipse,(200,50))
