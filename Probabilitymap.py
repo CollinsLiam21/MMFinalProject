@@ -108,7 +108,7 @@ def mouseClick(event):
     elif 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         data['shotPlaceProb'] = '44%'
-        Sprite(TextAsset(shotPlaceProbList[5][data['whichLocation']],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[5][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
