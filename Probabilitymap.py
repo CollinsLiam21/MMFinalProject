@@ -109,11 +109,11 @@ def mouseClick(event):
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[4][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 11
-    elif 785 < event.x < 860 and 25 < event.y < 91.67:
+    elif 785 < event.x < 935 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[3][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 13
-    elif 860 < event.x < 935 and 25 < event.y < 91.67:
+    elif 935 < event.x < 1010 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[5][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
 
