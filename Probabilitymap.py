@@ -99,12 +99,13 @@ noOutline = LineStyle(0,black)
 
 field = RectangleAsset(700,500,blackOutline,green) #width, height, outline, fill
 YardBox = RectangleAsset(400,200,blackOutline,green) #width, height, outline, fill
+ChooseLocation = TextAsset('Choose_Location',fill=black, style='bold 15pt Times') #text, other options
 location_13 = RectangleAsset(225,75,blackOutline,green)
 SoccerBall = CircleAsset(10,blackOutline,black)
 goalProb = TextAsset('Goal Probability',fill=black, style='bold 20pt Times') #text, other options
 
 goal = RectangleAsset(300,200,blackOutline,orange)
-GOAL = TextAsset('Choose Shot Place',fill=black, style='bold 15pt Times') #text, other options
+ChooseShotPlace = TextAsset('Choose_Shot_Place',fill=black, style='bold 15pt Times') #text, other options
 #blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 #greenEllipse = EllipseAsset(100,50,blackOutline,green) #width, height, outline, fill
 #blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
@@ -113,7 +114,7 @@ GOAL = TextAsset('Choose Shot Place',fill=black, style='bold 15pt Times') #text,
 Sprite(field)
 Sprite(YardBox, (150,300))
 Sprite(location_13, (237.5,425))
-Sprite(goal, (710,50))
+Sprite(goal, (710,25))
 Sprite(GOAL, (750,0))
 #Sprite(HalfCircleBox, (50,50))
 #Sprite(blueCircle,(50,50))
