@@ -8,7 +8,7 @@ shotPlaceProbList = [[58,53,21,0,42,44],[7,10,5,0,6,9],[12,30,15,0,17,33],[30,8,
 def mouseClick(event): 
     A = event.x
     B = event.y
-    #Location 5
+    '''#Location 5
     if event.x < 150 and 300 < event.y < 500:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '0%'
@@ -19,7 +19,7 @@ def mouseClick(event):
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '0%'
         data['whichLocation'] = 1
-        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
+        Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))'''
     #Location 11
     elif 150 < event.x < 237.5 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
@@ -36,7 +36,7 @@ def mouseClick(event):
     elif 237.5 < event.x < 462.5 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '15%'
-        data['whichLocation'] = 0
+        data['whichLocation'] = 2
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #Location 12
     elif 150 < event.x < 237.5 and 425 < event.y < 500:
@@ -107,27 +107,27 @@ def mouseClick(event):
     #shot place 12
     elif 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][4],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][4],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 11
     elif 785 < event.x < 935 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][3],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][3],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 13
     elif 935 < event.x < 1010 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][5],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][5],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 5
     elif 710 < event.x < 1010 and 91.67 < event.y < 158.34:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][2],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][2],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 3
     elif 710 < event.x < 860 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][0],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][0],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 4
     elif 860 < event.x < 1010 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][1],fill=black, style='bold 15pt Times'), (900,425))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
