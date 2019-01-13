@@ -128,6 +128,7 @@ def mouseClick(event):
     elif 860 < event.x < 1010 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][1],fill=black, style='bold 15pt Times'), (900,425))
+    bodyPart = input('Lefty (1), Righty (2), or header (3)? ')
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
