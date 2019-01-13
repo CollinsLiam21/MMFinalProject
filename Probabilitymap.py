@@ -148,6 +148,10 @@ def bodyPart():
     bodyPart = input('Righty (1), Lefty (2), or Header (3)? ')
     if bodyPart == 1:
         Sprite(TextAsset(righty[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,450))
+    elif bodyPart == 2:
+        Sprite(TextAsset(lefty[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,450))
+    elif bodyPart == 3:
+        Sprite(TextAsset(header[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,450))
         
 
 red = Color(0xFF0000,1)
