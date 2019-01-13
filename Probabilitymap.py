@@ -3,7 +3,7 @@
 
 from ggame import *
 
-shotPlaceProbList = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,44,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
+shotPlaceProbList = [[58,53,21,42,44],[7,10,5,6,9],[12,30,15,17,33],[30,8,20,33,14],[13,33,7,15,36],[48,64,37,39,71],[38,14,9,39,16],[80,46,34,81,52],[87,86,68,82,84],[15,15,2,16,17],[4,8,0.6,9,5],[1,9,5,7,7],[0,20,0,0,8]]
 
 def mouseClick(event): 
     A = event.x
@@ -66,7 +66,7 @@ def mouseClick(event):
     elif 250 < event.x < 450 and 225 < event.y < 300:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '3%'
-        data['whichLocation'] = 15
+        data['whichLocation'] = 14
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #Location 6left
     elif event.x < 250 and 150 < event.y < 225:
@@ -84,19 +84,19 @@ def mouseClick(event):
     elif 250 < event.x < 450 and 150 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '2%'
-        data['whichLocation'] = 16
+        data['whichLocation'] = 15
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #Location 17
     elif event.x < 700 and 75 < event.y < 150:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '1%'
-        data['whichLocation'] = 17
+        data['whichLocation'] = 16
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #Location 18
     elif event.x < 700 and event.y < 75:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '2%'
-        data['whichLocation'] = 18
+        data['whichLocation'] = 17
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #Location 13
     elif 237.5 < event.x < 462.5 and 425 < event.y < 500:
@@ -107,27 +107,27 @@ def mouseClick(event):
     #shot place 12
     elif 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[4][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][4],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 11
     elif 785 < event.x < 935 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[3][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][3],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 13
     elif 935 < event.x < 1010 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[5][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][5],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 5
     elif 710 < event.x < 1010 and 91.67 < event.y < 158.34:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[2][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][2],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 3
     elif 710 < event.x < 860 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[0][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][0],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 4
     elif 860 < event.x < 1010 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[1][data['whichLocation']-1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-1][1],fill=black, style='bold 15pt Times'), (900,425))
 
 red = Color(0xFF0000,1)
 green = Color(0x00FF00,1)
