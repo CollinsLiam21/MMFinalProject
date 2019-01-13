@@ -145,7 +145,7 @@ def mouseClick(event):
         bodyPart()
     
 def bodyPart():
-    bodyPart = num(input('Righty (1), Lefty (2), or Header (3)? '))
+    bodyPart = int(input('Righty (1), Lefty (2), or Header (3)? '))
     if bodyPart == 1:
         Sprite(TextAsset(righty[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,450))
     elif bodyPart == 2:
