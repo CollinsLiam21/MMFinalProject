@@ -21,7 +21,7 @@ def mouseClick(event):
         data['whichLocation'] = 1
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))'''
     #Location 11
-    elif 150 < event.x < 237.5 and 300 < event.y < 425:
+    if 150 < event.x < 237.5 and 300 < event.y < 425:
         Sprite(SoccerBall, (A-10,B-10))
         data['goalProb'] = '7%'
         data['whichLocation'] = 8
