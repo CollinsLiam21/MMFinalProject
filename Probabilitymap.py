@@ -177,5 +177,4 @@ data['shotPlaceProb'] = 0
 data['whichLocation'] = 0
 
 App().listenMouseEvent('click',mouseClick)
-App().listenMouseEvent('click',shotPlace)
 App().run()
