@@ -108,6 +108,7 @@ def mouseClick(event):
     if 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][4],fill=black, style='bold 15pt Times'), (900,425))
+        bodyPart()
     #shot place 11
     elif 785 < event.x < 935 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
@@ -128,6 +129,8 @@ def mouseClick(event):
     elif 860 < event.x < 1010 and 158.34 < event.y < 225:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][1],fill=black, style='bold 15pt Times'), (900,425))
+    
+def bodyPart():
     bodyPart = input('Lefty (1), Righty (2), or header (3)? ')
 
 red = Color(0xFF0000,1)
