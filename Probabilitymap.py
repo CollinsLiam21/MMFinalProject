@@ -106,38 +106,44 @@ def mouseClick(event):
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
     #shot place 12
     if 710 < event.x < 785 and 25 < event.y < 91.67:
+        data['shotPlace'] = 4
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][4],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     #shot place 11
     elif 785 < event.x < 935 and 25 < event.y < 91.67:
+        data['shotPlace'] = 3
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][3],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     #shot place 13
     elif 935 < event.x < 1010 and 25 < event.y < 91.67:
+        data['shotPlace'] = 5
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][5],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     #shot place 5
     elif 710 < event.x < 1010 and 91.67 < event.y < 158.34:
+        data['shotPlace'] = 2
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][2],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     #shot place 3
     elif 710 < event.x < 860 and 158.34 < event.y < 225:
+        data['shotPlace'] = 0
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][0],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     #shot place 4
     elif 860 < event.x < 1010 and 158.34 < event.y < 225:
+        data['shotPlace'] = 1
         Sprite(SoccerBall, (A-10,B-10))
-        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][1],fill=black, style='bold 15pt Times'), (900,425))
+        Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][data['shotPlace']],fill=black, style='bold 15pt Times'), (900,425))
         bodyPart()
     
 def bodyPart():
-    bodyPart = input('Lefty (1), Righty (2), or header (3)? ')
-    if bodyPart == 1:
+    bodyPart = input('Lefty (1), Righty (2), or Header (3)? ')
+    #if bodyPart == 1:
         
 
 red = Color(0xFF0000,1)
@@ -186,6 +192,7 @@ data = {}
 data['goalProb'] = 0
 data['shotPlaceProb'] = 0
 data['whichLocation'] = 0
+data['shotPlace'] = 0
 
 App().listenMouseEvent('click',mouseClick)
 App().run()
