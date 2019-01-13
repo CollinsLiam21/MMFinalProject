@@ -104,11 +104,8 @@ def mouseClick(event):
         data['goalProb'] = '50%'
         data['whichLocation'] = 10
         Sprite(TextAsset(data['goalProb'],fill=black, style='bold 15pt Times'), (900,400))
-    shotplace()
-        
-def shotplace():
     #shot place 12
-    elif 710 < event.x < 785 and 25 < event.y < 91.67:
+    if 710 < event.x < 785 and 25 < event.y < 91.67:
         Sprite(SoccerBall, (A-10,B-10))
         Sprite(TextAsset(shotPlaceProbList[data['whichLocation']-2][4],fill=black, style='bold 15pt Times'), (900,425))
     #shot place 11
@@ -180,4 +177,5 @@ data['shotPlaceProb'] = 0
 data['whichLocation'] = 0
 
 App().listenMouseEvent('click',mouseClick)
+App().listenMouseEvent('click',shotPlace)
 App().run()
